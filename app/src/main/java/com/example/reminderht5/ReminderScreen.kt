@@ -12,6 +12,10 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.background
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -168,9 +172,10 @@ fun ReminderHomeScreen() {
     var currentTask by remember { mutableStateOf(TaskPrefs.loadTask(ctx)) }
 
     LaunchedEffect(Unit) {
+
         NotificationHelper.ensureChannels(ctx)
     }
-
+    val scrollState = rememberScrollState()
     Scaffold(
         topBar = {
             TopAppBar(
@@ -194,6 +199,7 @@ fun ReminderHomeScreen() {
             modifier = Modifier
                 .padding(padding)
                 .fillMaxSize()
+                .verticalScroll(scrollState)
                 .padding(12.dp)
         ) {
 
