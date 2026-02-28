@@ -375,15 +375,7 @@ fun ReminderHomeScreen() {
                         modifier = Modifier.fillMaxWidth(),
                         verticalAlignment = Alignment.CenterVertically
                     ) {
-                        OutlinedButton(
-                            onClick = {
-                                pickMusicLauncher.launch(arrayOf("audio/*"))
-                            }
-                        ) {
-                            Text("NHẠC", color = Color.Black)
-                        }
-                        Spacer(Modifier.width(12.dp))
-                        Text(musicLabel)
+                        
                     }
 
                     Spacer(Modifier.height(12.dp))
