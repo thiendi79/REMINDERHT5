@@ -1,0 +1,2059 @@
+﻿=== TỔNG QUAN DỰ ÁN ===
+Folder PATH listing for volume Windows 10_18
+Volume serial number is D26D-BFE2
+C:\USERS\DELL\ANDROIDSTUDIOPROJECTS\REMINDERHT5
+³   .gitignore
+³   06 Bao_Gao_Du_An_AI.txt
+³   Bao_Gao_Du_An_AI.txt
+³   build.gradle.kts
+³   gradle.properties
+³   gradlew
+³   gradlew.bat
+³   local.properties
+³   settings.gradle.kts
+³   
+ÃÄÄÄ.gradle
+³   ³   file-system.probe
+³   ³   
+³   ÃÄÄÄ9.1.0
+³   ³   ³   gc.properties
+³   ³   ³   
+³   ³   ÃÄÄÄchecksums
+³   ³   ³       checksums.lock
+³   ³   ³       md5-checksums.bin
+³   ³   ³       sha1-checksums.bin
+³   ³   ³       
+³   ³   ÃÄÄÄexecutionHistory
+³   ³   ³       executionHistory.bin
+³   ³   ³       executionHistory.lock
+³   ³   ³       
+³   ³   ÃÄÄÄexpanded
+³   ³   ÃÄÄÄfileChanges
+³   ³   ³       last-build.bin
+³   ³   ³       
+³   ³   ÃÄÄÄfileHashes
+³   ³   ³       fileHashes.bin
+³   ³   ³       fileHashes.lock
+³   ³   ³       resourceHashesCache.bin
+³   ³   ³       
+³   ³   ÀÄÄÄvcsMetadata
+³   ÃÄÄÄbuildOutputCleanup
+³   ³       buildOutputCleanup.lock
+³   ³       cache.properties
+³   ³       outputFiles.bin
+³   ³       
+³   ÃÄÄÄkotlin
+³   ³   ÃÄÄÄerrors
+³   ³   ÀÄÄÄsessions
+³   ÀÄÄÄvcs-1
+³           gc.properties
+³           
+ÃÄÄÄ.idea
+³   ³   .gitignore
+³   ³   AndroidProjectSystem.xml
+³   ³   assetWizardSettings.xml
+³   ³   compiler.xml
+³   ³   deploymentTargetSelector.xml
+³   ³   deviceManager.xml
+³   ³   gradle.xml
+³   ³   migrations.xml
+³   ³   misc.xml
+³   ³   runConfigurations.xml
+³   ³   vcs.xml
+³   ³   workspace.xml
+³   ³   
+³   ÃÄÄÄcaches
+³   ³       deviceStreaming.xml
+³   ³       
+³   ÃÄÄÄinspectionProfiles
+³   ³       Project_Default.xml
+³   ³       
+³   ÀÄÄÄmodules
+³       ÀÄÄÄapp
+³               REMINDERHT5.app.iml
+³               
+ÃÄÄÄ.kotlin
+³   ÀÄÄÄsessions
+ÃÄÄÄapp
+³   ³   .gitignore
+³   ³   build.gradle.kts
+³   ³   google-services.json
+³   ³   proguard-rules.pro
+³   ³   
+³   ÃÄÄÄbuild
+³   ³   ³   gmpAppId.txt
+³   ³   ³   
+³   ³   ÃÄÄÄgenerated
+³   ³   ³   ÀÄÄÄres
+³   ³   ³       ÃÄÄÄpngs
+³   ³   ³       ³   ÀÄÄÄdebug
+³   ³   ³       ÃÄÄÄprocessDebugGoogleServices
+³   ³   ³       ³   ÀÄÄÄvalues
+³   ³   ³       ³           values.xml
+³   ³   ³       ³           
+³   ³   ³       ÀÄÄÄresValues
+³   ³   ³           ÀÄÄÄdebug
+³   ³   ÃÄÄÄintermediates
+³   ³   ³   ÃÄÄÄaar_metadata_check
+³   ³   ³   ³   ÀÄÄÄdebug
+³   ³   ³   ³       ÀÄÄÄcheckDebugAarMetadata
+³   ³   ³   ÃÄÄÄannotation_processor_list
+³   ³   ³   ³   ÀÄÄÄdebug
+³   ³   ³   ³       ÀÄÄÄjavaPreCompileDebug
+³   ³   ³   ³               annotationProcessors.json
+³   ³   ³   ³               
+³   ³   ³   ÃÄÄÄapk
+³   ³   ³   ³   ÀÄÄÄdebug
+³   ³   ³   ³           app-debug.apk
+³   ³   ³   ³           output-metadata.json
+³   ³   ³   ³           
+³   ³   ³   ÃÄÄÄapk_ide_redirect_file
+³   ³   ³   ³   ÀÄÄÄdebug
+³   ³   ³   ³       ÀÄÄÄcreateDebugApkListingFileRedirect
+³   ³   ³   ³               redirect.txt
+³   ³   ³   ³               
+³   ³   ³   ÃÄÄÄapp_metadata
+³   ³   ³   ³   ÀÄÄÄdebug
+³   ³   ³   ³       ÀÄÄÄwriteDebugAppMetadata
+³   ³   ³   ³               app-metadata.properties
+³   ³   ³   ³               
+³   ³   ³   ÃÄÄÄassets
+³   ³   ³   ³   ÀÄÄÄdebug
+³   ³   ³   ³       ÀÄÄÄmergeDebugAssets
+³   ³   ³   ÃÄÄÄcompatible_screen_manifest
+³   ³   ³   ³   ÀÄÄÄdebug
+³   ³   ³   ³       ÀÄÄÄcreateDebugCompatibleScreenManifests
+³   ³   ³   ³               output-metadata.json
+³   ³   ³   ³               
+³   ³   ³   ÃÄÄÄcompile_and_runtime_not_namespaced_r_class_jar
+³   ³   ³   ³   ÀÄÄÄdebug
+³   ³   ³   ³       ÀÄÄÄprocessDebugResources
+³   ³   ³   ³               R.jar
+³   ³   ³   ³               
+³   ³   ³   ÃÄÄÄcompressed_assets
+³   ³   ³   ³   ÀÄÄÄdebug
+³   ³   ³   ³       ÀÄÄÄcompressDebugAssets
+³   ³   ³   ³           ÀÄÄÄout
+³   ³   ³   ÃÄÄÄdata_binding_layout_info_type_merge
+³   ³   ³   ³   ÀÄÄÄdebug
+³   ³   ³   ³       ÀÄÄÄmergeDebugResources
+³   ³   ³   ³           ÀÄÄÄout
+³   ³   ³   ÃÄÄÄdata_binding_layout_info_type_package
+³   ³   ³   ³   ÀÄÄÄdebug
+³   ³   ³   ³       ÀÄÄÄpackageDebugResources
+³   ³   ³   ³           ÀÄÄÄout
+³   ³   ³   ÃÄÄÄdesugar_graph
+³   ³   ³   ³   ÀÄÄÄdebug
+³   ³   ³   ³       ÀÄÄÄdexBuilderDebug
+³   ³   ³   ³           ÀÄÄÄout
+³   ³   ³   ³               ÃÄÄÄcurrentProject
+³   ³   ³   ³               ³   ÃÄÄÄdirs_bucket_0
+³   ³   ³   ³               ³   ³       graph.bin
+³   ³   ³   ³               ³   ³       
+³   ³   ³   ³               ³   ÃÄÄÄdirs_bucket_1
+³   ³   ³   ³               ³   ³       graph.bin
+³   ³   ³   ³               ³   ³       
+³   ³   ³   ³               ³   ÃÄÄÄjar_0e8a2486a324dd4a9ba79eee5b170d26c51b5f0e02b38a506c24ca7efbed0b36_bucket_0
+³   ³   ³   ³               ³   ³       graph.bin
+³   ³   ³   ³               ³   ³       
+³   ³   ³   ³               ³   ÀÄÄÄjar_0e8a2486a324dd4a9ba79eee5b170d26c51b5f0e02b38a506c24ca7efbed0b36_bucket_1
+³   ³   ³   ³               ³           graph.bin
+³   ³   ³   ³               ³           
+³   ³   ³   ³               ÃÄÄÄexternalLibs
+³   ³   ³   ³               ÃÄÄÄmixedScopes
+³   ³   ³   ³               ÀÄÄÄotherProjects
+³   ³   ³   ÃÄÄÄdex
+³   ³   ³   ³   ÀÄÄÄdebug
+³   ³   ³   ³       ÃÄÄÄmergeExtDexDebug
+³   ³   ³   ³       ³       classes.dex
+³   ³   ³   ³       ³       classes2.dex
+³   ³   ³   ³       ³       classes3.dex
+³   ³   ³   ³       ³       classes4.dex
+³   ³   ³   ³       ³       
+³   ³   ³   ³       ÃÄÄÄmergeLibDexDebug
+³   ³   ³   ³       ³   ÃÄÄÄ0
+³   ³   ³   ³       ³   ÃÄÄÄ1
+³   ³   ³   ³       ³   ÃÄÄÄ10
+³   ³   ³   ³       ³   ÃÄÄÄ11
+³   ³   ³   ³       ³   ÃÄÄÄ12
+³   ³   ³   ³       ³   ÃÄÄÄ13
+³   ³   ³   ³       ³   ÃÄÄÄ14
+³   ³   ³   ³       ³   ÃÄÄÄ15
+³   ³   ³   ³       ³   ÃÄÄÄ2
+³   ³   ³   ³       ³   ÃÄÄÄ3
+³   ³   ³   ³       ³   ÃÄÄÄ4
+³   ³   ³   ³       ³   ÃÄÄÄ5
+³   ³   ³   ³       ³   ÃÄÄÄ6
+³   ³   ³   ³       ³   ÃÄÄÄ7
+³   ³   ³   ³       ³   ÃÄÄÄ8
+³   ³   ³   ³       ³   ÀÄÄÄ9
+³   ³   ³   ³       ÀÄÄÄmergeProjectDexDebug
+³   ³   ³   ³           ÃÄÄÄ0
+³   ³   ³   ³           ³       classes.dex
+³   ³   ³   ³           ³       
+³   ³   ³   ³           ÃÄÄÄ1
+³   ³   ³   ³           ÃÄÄÄ10
+³   ³   ³   ³           ÃÄÄÄ11
+³   ³   ³   ³           ³       classes.dex
+³   ³   ³   ³           ³       
+³   ³   ³   ³           ÃÄÄÄ12
+³   ³   ³   ³           ³       classes.dex
+³   ³   ³   ³           ³       
+
+=== DANH SÁCH FILE KT & JAVA ===
+
+--- FILE: \app\src\androidTest\java\com\example\reminderht5\ExampleInstrumentedTest.kt ---
+package com.example.reminderht5
+
+import androidx.test.platform.app.InstrumentationRegistry
+import androidx.test.ext.junit.runners.AndroidJUnit4
+
+import org.junit.Test
+import org.junit.runner.RunWith
+
+import org.junit.Assert.*
+
+/**
+ * Instrumented test, which will execute on an Android device.
+ *
+ * See [testing documentation](http://d.android.com/tools/testing).
+ */
+@RunWith(AndroidJUnit4::class)
+class ExampleInstrumentedTest {
+    @Test
+    fun useAppContext() {
+        // Context of the app under test.
+        val appContext = InstrumentationRegistry.getInstrumentation().targetContext
+        assertEquals("com.example.reminderht5", appContext.packageName)
+    }
+}
+
+--- FILE: \app\src\main\java\com\example\reminderht5\ui\theme\Color.kt ---
+package com.example.reminderht5.ui.theme
+
+import androidx.compose.ui.graphics.Color
+
+val Purple80 = Color(0xFFD0BCFF)
+val PurpleGrey80 = Color(0xFFCCC2DC)
+val Pink80 = Color(0xFFEFB8C8)
+
+val Purple40 = Color(0xFF6650a4)
+val PurpleGrey40 = Color(0xFF625b71)
+val Pink40 = Color(0xFF7D5260)
+
+--- FILE: \app\src\main\java\com\example\reminderht5\ui\theme\ReminderHTTheme.kt ---
+package com.example.reminderht5.ui.theme
+
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Typography
+import androidx.compose.material3.lightColorScheme
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
+
+private val ReminderLightColors = lightColorScheme(
+    primary = Color(0xFF1B8E6B),
+    secondary = Color(0xFF1976D2),
+    background = Color(0xFFEAF5F7),
+    surface = Color.White,
+    onPrimary = Color.White,
+    onSecondary = Color.White,
+    onBackground = Color(0xFF1F2937),
+    onSurface = Color(0xFF1F2937)
+)
+
+private val AppTypography = Typography()
+
+@Composable
+fun ReminderHTTheme(content: @Composable () -> Unit) {
+    MaterialTheme(
+        colorScheme = ReminderLightColors,
+        typography = AppTypography,
+        content = content
+    )
+}
+
+--- FILE: \app\src\main\java\com\example\reminderht5\ui\theme\Theme.kt ---
+package com.example.reminderht5.ui.theme
+
+import android.app.Activity
+import android.os.Build
+import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.darkColorScheme
+import androidx.compose.material3.dynamicDarkColorScheme
+import androidx.compose.material3.dynamicLightColorScheme
+import androidx.compose.material3.lightColorScheme
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.platform.LocalContext
+
+private val DarkColorScheme = darkColorScheme(
+    primary = Purple80,
+    secondary = PurpleGrey80,
+    tertiary = Pink80
+)
+
+private val LightColorScheme = lightColorScheme(
+    primary = Purple40,
+    secondary = PurpleGrey40,
+    tertiary = Pink40
+
+    /* Other default colors to override
+    background = Color(0xFFFFFBFE),
+    surface = Color(0xFFFFFBFE),
+    onPrimary = Color.White,
+    onSecondary = Color.White,
+    onTertiary = Color.White,
+    onBackground = Color(0xFF1C1B1F),
+    onSurface = Color(0xFF1C1B1F),
+    */
+)
+
+@Composable
+fun REMINDERHT5Theme(
+    darkTheme: Boolean = isSystemInDarkTheme(),
+    // Dynamic color is available on Android 12+
+    dynamicColor: Boolean = true,
+    content: @Composable () -> Unit
+) {
+    val colorScheme = when {
+        dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
+            val context = LocalContext.current
+            if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
+        }
+
+        darkTheme -> DarkColorScheme
+        else -> LightColorScheme
+    }
+
+    MaterialTheme(
+        colorScheme = colorScheme,
+        typography = Typography,
+        content = content
+    )
+}
+
+--- FILE: \app\src\main\java\com\example\reminderht5\ui\theme\Type.kt ---
+package com.example.reminderht5.ui.theme
+
+import androidx.compose.material3.Typography
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.sp
+
+// Set of Material typography styles to start with
+val Typography = Typography(
+    bodyLarge = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontWeight = FontWeight.Normal,
+        fontSize = 16.sp,
+        lineHeight = 24.sp,
+        letterSpacing = 0.5.sp
+    )
+    /* Other default text styles to override
+    titleLarge = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontWeight = FontWeight.Normal,
+        fontSize = 22.sp,
+        lineHeight = 28.sp,
+        letterSpacing = 0.sp
+    ),
+    labelSmall = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontWeight = FontWeight.Medium,
+        fontSize = 11.sp,
+        lineHeight = 16.sp,
+        letterSpacing = 0.5.sp
+    )
+    */
+)
+
+--- FILE: \app\src\main\java\com\example\reminderht5\AlarmActivity.kt ---
+package com.example.reminderht5
+
+import android.content.Context
+import android.content.Intent
+import android.media.AudioAttributes
+import android.media.MediaPlayer
+import android.os.Build
+import android.os.Bundle
+import android.os.VibrationEffect
+import android.os.Vibrator
+import android.view.WindowManager
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.*
+import androidx.compose.material3.Button
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+
+class AlarmActivity : ComponentActivity() {
+
+    private var player: MediaPlayer? = null
+    private var vibrator: Vibrator? = null
+    private var vibrating = false
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        // báº­t mÃ n hÃ¬nh + hiá»‡n trÃªn lockscreen
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O_MR1) {
+            setShowWhenLocked(true)
+            setTurnScreenOn(true)
+        } else {
+            @Suppress("DEPRECATION")
+            window.addFlags(
+                WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED or
+                        WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON or
+                        WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON
+            )
+        }
+
+        val title = intent.getStringExtra(EXTRA_TITLE) ?: "BÃO THá»¨C"
+        val musicUriStr = intent.getStringExtra(EXTRA_MUSIC_URI) ?: ""
+        val taskId = intent.getIntExtra(EXTRA_TASK_ID, -1)
+
+        startAlarmSound(musicUriStr)
+        startVibrate()
+
+        setContent {
+            MaterialTheme {
+                Surface(modifier = Modifier.fillMaxSize()) {
+                    AlarmUi(
+                        title = title,
+                        onPause = {
+                            // Táº M Dá»ªNG: chá»‰ táº¯t tiáº¿ng/rung hiá»‡n táº¡i, KHÃ”NG huá»· lá»‹ch nháº¯c
+                            stopEverything()
+                            finish()
+                        },
+                        onStopForever = {
+                            // Dá»ªNG Háº²N: táº¯t + huá»· lá»‹ch + disable task
+                            stopEverything()
+                            if (taskId > 0) {
+                                try {
+                                    TaskPrefs.setEnabled(this@AlarmActivity, false)
+                                    AlarmScheduler.cancelAll(this@AlarmActivity, taskId)
+                                } catch (_: Exception) {
+                                }
+                            }
+                            finish()
+                        }
+                    )
+                }
+            }
+        }
+    }
+
+    override fun onDestroy() {
+        stopEverything()
+        super.onDestroy()
+    }
+
+    private fun startAlarmSound(musicUriStr: String) {
+        val uri = if (musicUriStr.isNotBlank()) {
+            android.net.Uri.parse(musicUriStr)
+        } else {
+            android.provider.Settings.System.DEFAULT_ALARM_ALERT_URI
+                ?: android.provider.Settings.System.DEFAULT_RINGTONE_URI
+        }
+
+        try {
+            player = MediaPlayer().apply {
+                setDataSource(this@AlarmActivity, uri)
+                setAudioAttributes(
+                    AudioAttributes.Builder()
+                        .setUsage(AudioAttributes.USAGE_ALARM)
+                        .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                        .build()
+                )
+                isLooping = true
+                prepare()
+                start()
+            }
+        } catch (_: Exception) {
+            // náº¿u uri lá»—i thÃ¬ fallback sang chuÃ´ng máº·c Ä‘á»‹nh
+            try {
+                val fallback = android.provider.Settings.System.DEFAULT_ALARM_ALERT_URI
+                    ?: android.provider.Settings.System.DEFAULT_RINGTONE_URI
+                player = MediaPlayer().apply {
+                    setDataSource(this@AlarmActivity, fallback)
+                    setAudioAttributes(
+                        AudioAttributes.Builder()
+                            .setUsage(AudioAttributes.USAGE_ALARM)
+                            .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                            .build()
+                    )
+                    isLooping = true
+                    prepare()
+                    start()
+                }
+            } catch (_: Exception) {
+            }
+        }
+    }
+
+    private fun startVibrate() {
+        vibrator = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+        if (vibrator?.hasVibrator() != true) return
+
+        vibrating = true
+        val pattern = longArrayOf(0, 800, 400, 800, 400, 800) // rung-nghá»‰ láº·p
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            vibrator?.vibrate(VibrationEffect.createWaveform(pattern, 0))
+        } else {
+            @Suppress("DEPRECATION")
+            vibrator?.vibrate(pattern, 0)
+        }
+    }
+
+    private fun stopEverything() {
+        try {
+            player?.stop()
+        } catch (_: Exception) {
+        }
+        try {
+            player?.release()
+        } catch (_: Exception) {
+        }
+        player = null
+
+        if (vibrating) {
+            try {
+                vibrator?.cancel()
+            } catch (_: Exception) {
+            }
+            vibrating = false
+        }
+    }
+
+    companion object {
+        private const val EXTRA_TITLE = "extra_title"
+        private const val EXTRA_MUSIC_URI = "extra_music_uri"
+        private const val EXTRA_TASK_ID = "extra_task_id"
+
+        fun start(context: Context, title: String, musicUriStr: String?, taskId: Int) {
+            val i = Intent(context, AlarmActivity::class.java).apply {
+                addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                putExtra(EXTRA_TITLE, title)
+                putExtra(EXTRA_MUSIC_URI, musicUriStr ?: "")
+                putExtra(EXTRA_TASK_ID, taskId)
+            }
+            context.startActivity(i)
+        }
+    }
+}
+
+@Composable
+private fun AlarmUi(
+    title: String,
+    onPause: () -> Unit,
+    onStopForever: () -> Unit
+) {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(20.dp),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(text = title, style = MaterialTheme.typography.headlineMedium)
+        Spacer(Modifier.height(16.dp))
+        Text(text = "Äang reoâ€¦", style = MaterialTheme.typography.bodyLarge)
+        Spacer(Modifier.height(28.dp))
+
+        // Táº M Dá»ªNG (khÃ´ng huá»· lá»‹ch)
+        Button(
+            onClick = onPause,
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(56.dp)
+        ) {
+            Text("Táº M Dá»ªNG")
+        }
+
+        Spacer(Modifier.height(12.dp))
+
+        // Dá»ªNG Háº²N (huá»· lá»‹ch)
+        Button(
+            onClick = onStopForever,
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(56.dp)
+        ) {
+            Text("Dá»ªNG Háº²N")
+        }
+    }
+}
+
+--- FILE: \app\src\main\java\com\example\reminderht5\AlarmReceiver.kt ---
+package com.example.reminderht5
+
+import android.content.BroadcastReceiver
+import android.content.Context
+import android.content.Intent
+import android.util.Log
+
+class AlarmReceiver : BroadcastReceiver() {
+
+    override fun onReceive(context: Context, intent: Intent) {
+        val action = intent.getStringExtra(AlarmScheduler.EXTRA_ACTION) ?: return
+        val taskId = intent.getIntExtra(AlarmScheduler.EXTRA_TASK_ID, 1)
+        val ringIndex = intent.getIntExtra(AlarmScheduler.EXTRA_RING_INDEX, 0)
+
+        val task = TaskPrefs.loadTask(context)
+
+        when (action) {
+            AlarmScheduler.ACTION_STOP -> {
+                Log.d("REMINDER_HT", "STOP pressed")
+                AlarmSoundService.stop(context)
+                AlarmScheduler.cancelAll(context, taskId)
+                TaskPrefs.setEnabled(context, false)
+            }
+
+            AlarmScheduler.ACTION_BASE -> {
+                if (!task.enabled || task.taskId != taskId) return
+
+                Log.d("REMINDER_HT", "BASE fired music='${task.musicUriStr}'")
+
+                // phÃ¡t 1 láº§n ngay lÃºc háº¹n
+                AlarmSoundService.playOnce(context, task.name, task.musicUriStr)
+
+                // lÃªn lá»‹ch chu ká»³ tiáº¿p theo
+                AlarmScheduler.scheduleNextBase(context, task)
+
+                // lÃªn lá»‹ch cÃ¡c láº§n nháº¯c láº¡i (10 láº§n/1 phÃºt...)
+                AlarmScheduler.scheduleRings(context, task)
+            }
+
+            AlarmScheduler.ACTION_RING -> {
+                if (!task.enabled || task.taskId != taskId) return
+
+                Log.d("REMINDER_HT", "RING #$ringIndex fired")
+                AlarmSoundService.playOnce(context, "Nháº¯c láº¡i: ${task.name}", task.musicUriStr)
+            }
+        }
+    }
+}
+
+--- FILE: \app\src\main\java\com\example\reminderht5\AlarmScheduler.kt ---
+package com.example.reminderht5
+
+import android.app.AlarmManager
+import android.app.PendingIntent
+import android.content.Context
+import android.content.Intent
+import android.os.Build
+import java.util.Calendar
+
+object AlarmScheduler {
+
+    const val EXTRA_ACTION = "extra_action"
+    const val EXTRA_TASK_ID = "extra_task_id"
+    const val EXTRA_RING_INDEX = "extra_ring_index"
+
+    const val ACTION_BASE = "ACTION_BASE"   // tá»›i giá» háº¹n chÃ­nh
+    const val ACTION_RING = "ACTION_RING"   // cÃ¡c láº§n nháº¯c láº¡i (ring)
+    const val ACTION_STOP = "ACTION_STOP"   // nÃºt dá»«ng tá»« notification
+
+    private fun alarmManager(ctx: Context): AlarmManager =
+        ctx.getSystemService(Context.ALARM_SERVICE) as AlarmManager
+
+    fun cancelAll(ctx: Context, taskId: Int) {
+        val am = alarmManager(ctx)
+
+        // há»§y base
+        am.cancel(pendingBase(ctx, taskId))
+
+        // há»§y tá»‘i Ä‘a 60 ring (Ä‘á»§ cho demo)
+        for (i in 1..60) {
+            am.cancel(pendingRing(ctx, taskId, i))
+        }
+    }
+
+    fun scheduleBase(ctx: Context, task: ReminderTask) {
+        val triggerAt = computeFirstTriggerMillis(task)
+
+        val pi = pendingBase(ctx, task.taskId)
+        setExactCompat(ctx, triggerAt, pi)
+    }
+
+    fun scheduleNextBase(ctx: Context, task: ReminderTask) {
+        val now = System.currentTimeMillis()
+        val next = computeNextBaseMillis(now, task)
+        setExactCompat(ctx, next, pendingBase(ctx, task.taskId))
+    }
+
+    fun scheduleRings(ctx: Context, task: ReminderTask) {
+        // ringIndex báº¯t Ä‘áº§u tá»« 1..ringCount
+        val base = System.currentTimeMillis()
+        val every = (task.ringEveryMinutes.coerceAtLeast(1)) * 60_000L
+        val max = task.ringCount.coerceIn(1, 60)
+
+        for (i in 1..max) {
+            val whenMillis = base + (i - 1) * every
+            setExactCompat(ctx, whenMillis, pendingRing(ctx, task.taskId, i))
+        }
+    }
+
+    // ---------------- PendingIntents ----------------
+
+    private fun pendingBase(ctx: Context, taskId: Int): PendingIntent {
+        val intent = Intent(ctx, AlarmReceiver::class.java).apply {
+            putExtra(EXTRA_ACTION, ACTION_BASE)
+            putExtra(EXTRA_TASK_ID, taskId)
+        }
+        return PendingIntent.getBroadcast(
+            ctx,
+            10_000 + taskId,
+            intent,
+            pendingFlags()
+        )
+    }
+
+    private fun pendingRing(ctx: Context, taskId: Int, ringIndex: Int): PendingIntent {
+        val intent = Intent(ctx, AlarmReceiver::class.java).apply {
+            putExtra(EXTRA_ACTION, ACTION_RING)
+            putExtra(EXTRA_TASK_ID, taskId)
+            putExtra(EXTRA_RING_INDEX, ringIndex)
+        }
+        return PendingIntent.getBroadcast(
+            ctx,
+            20_000 + taskId * 100 + ringIndex,
+            intent,
+            pendingFlags()
+        )
+    }
+
+    fun pendingStop(ctx: Context, taskId: Int): PendingIntent {
+        val intent = Intent(ctx, AlarmReceiver::class.java).apply {
+            putExtra(EXTRA_ACTION, ACTION_STOP)
+            putExtra(EXTRA_TASK_ID, taskId)
+        }
+        return PendingIntent.getBroadcast(
+            ctx,
+            30_000 + taskId,
+            intent,
+            pendingFlags()
+        )
+    }
+
+    private fun pendingFlags(): Int {
+        val base = PendingIntent.FLAG_UPDATE_CURRENT
+        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            base or PendingIntent.FLAG_IMMUTABLE
+        } else base
+    }
+
+    // ---------------- Alarm set exact ----------------
+
+    private fun setExactCompat(ctx: Context, triggerAtMillis: Long, pi: PendingIntent) {
+        val am = alarmManager(ctx)
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            am.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, triggerAtMillis, pi)
+        } else {
+            @Suppress("DEPRECATION")
+            am.setExact(AlarmManager.RTC_WAKEUP, triggerAtMillis, pi)
+        }
+    }
+
+    // ---------------- Time calc ----------------
+
+    private fun computeFirstTriggerMillis(task: ReminderTask): Long {
+        val cal = Calendar.getInstance().apply {
+            set(Calendar.YEAR, task.year)
+            set(Calendar.MONTH, (task.month - 1).coerceIn(0, 11))
+            set(Calendar.DAY_OF_MONTH, task.day.coerceIn(1, 31))
+            set(Calendar.HOUR_OF_DAY, task.hour.coerceIn(0, 23))
+            set(Calendar.MINUTE, task.minute.coerceIn(0, 59))
+            set(Calendar.SECOND, 0)
+            set(Calendar.MILLISECOND, 0)
+        }
+
+        // náº¿u chá»n thá»i gian Ä‘Ã£ qua -> dá»i tá»›i láº§n láº·p tiáº¿p theo
+        val now = System.currentTimeMillis()
+        var t = cal.timeInMillis
+        if (t <= now) {
+            t = computeNextBaseMillis(now, task)
+        }
+        return t
+    }
+
+    private fun computeNextBaseMillis(fromMillis: Long, task: ReminderTask): Long {
+        val cal = Calendar.getInstance().apply {
+            timeInMillis = fromMillis
+            // láº¥y "h:m" theo task
+            set(Calendar.SECOND, 0)
+            set(Calendar.MILLISECOND, 0)
+            set(Calendar.HOUR_OF_DAY, task.hour.coerceIn(0, 23))
+            set(Calendar.MINUTE, task.minute.coerceIn(0, 59))
+        }
+
+        // náº¿u vá»«a set xong mÃ  váº«n <= now thÃ¬ cá»™ng thÃªm chu ká»³
+        if (cal.timeInMillis <= fromMillis) {
+            addRepeat(cal, task.repeatValue, task.repeatUnit)
+        } else {
+            // váº«n pháº£i Ä‘áº£m báº£o Ä‘Ãºng chu ká»³ náº¿u user chá»n láº·p ngÃ y/thÃ¡ng...:
+            // á»Ÿ Ä‘Ã¢y ta váº«n coi "láº§n káº¿" lÃ  láº§n cal hiá»‡n táº¡i, khÃ´ng Ã©p vá» ngÃ y/thÃ¡ng gá»‘c.
+        }
+        return cal.timeInMillis
+    }
+
+    private fun addRepeat(cal: Calendar, value: Int, unit: String) {
+        val v = value.coerceAtLeast(1)
+        when (unit) {
+            "Giá»" -> cal.add(Calendar.HOUR_OF_DAY, v)
+            "NgÃ y" -> cal.add(Calendar.DAY_OF_YEAR, v)
+            "Tuáº§n" -> cal.add(Calendar.WEEK_OF_YEAR, v)
+            "ThÃ¡ng" -> cal.add(Calendar.MONTH, v)
+            "NÄƒm" -> cal.add(Calendar.YEAR, v)
+            else -> cal.add(Calendar.MONTH, v)
+        }
+    }
+}
+
+--- FILE: \app\src\main\java\com\example\reminderht5\AlarmSoundService.kt ---
+package com.example.reminderht5
+
+import android.app.Notification
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.app.PendingIntent
+import android.app.Service
+import android.content.Context
+import android.content.Intent
+import android.media.AudioAttributes
+import android.media.MediaPlayer
+import android.net.Uri
+import android.os.Build
+import android.os.IBinder
+import androidx.core.app.NotificationCompat
+
+class AlarmSoundService : Service() {
+
+    private var player: MediaPlayer? = null
+
+    override fun onBind(intent: Intent?): IBinder? = null
+
+    override fun onCreate() {
+        super.onCreate()
+        ensureChannel()
+    }
+
+    override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+        val action = intent?.action ?: ACTION_PLAY
+
+        when (action) {
+            ACTION_STOP -> {
+                stopNow()
+                return START_NOT_STICKY
+            }
+
+            ACTION_PLAY -> {
+                val title = intent?.getStringExtra(EXTRA_TITLE) ?: "REMINDER HT"
+                val musicUriStr = intent?.getStringExtra(EXTRA_MUSIC_URI) ?: ""
+                val soundUri = if (musicUriStr.isNotBlank()) Uri.parse(musicUriStr)
+                else android.provider.Settings.System.DEFAULT_ALARM_ALERT_URI
+                    ?: android.provider.Settings.System.DEFAULT_RINGTONE_URI
+
+                // Foreground notification (nhá») Ä‘á»ƒ service khÃ´ng bá»‹ kill
+                startForeground(NOTI_ID, buildNotification(title))
+
+                playSound(soundUri)
+            }
+        }
+
+        return START_STICKY
+    }
+
+    override fun onDestroy() {
+        stopNow()
+        super.onDestroy()
+    }
+
+    private fun playSound(uri: Uri) {
+        try {
+            player?.stop()
+        } catch (_: Exception) {
+        }
+        try {
+            player?.release()
+        } catch (_: Exception) {
+        }
+        player = null
+
+        player = MediaPlayer().apply {
+            setDataSource(this@AlarmSoundService, uri)
+            setAudioAttributes(
+                AudioAttributes.Builder()
+                    .setUsage(AudioAttributes.USAGE_ALARM)
+                    .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                    .build()
+            )
+            isLooping = true
+            prepare()
+            start()
+        }
+    }
+
+    private fun stopNow() {
+        try {
+            player?.stop()
+        } catch (_: Exception) {
+        }
+        try {
+            player?.release()
+        } catch (_: Exception) {
+        }
+        player = null
+
+        stopForeground(true)
+        stopSelf()
+    }
+
+    private fun ensureChannel() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val nm = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
+            val ch = NotificationChannel(
+                CHANNEL_ID,
+                "REMINDER HT",
+                NotificationManager.IMPORTANCE_LOW
+            )
+            nm.createNotificationChannel(ch)
+        }
+    }
+
+    private fun buildNotification(title: String): Notification {
+        val openAppIntent = Intent(this, MainActivity::class.java)
+        val pi = PendingIntent.getActivity(
+            this,
+            0,
+            openAppIntent,
+            PendingIntent.FLAG_UPDATE_CURRENT or pendingFlags()
+        )
+
+        return NotificationCompat.Builder(this, CHANNEL_ID)
+            .setSmallIcon(android.R.drawable.ic_lock_idle_alarm)
+            .setContentTitle(title)
+            .setContentText("Äang reoâ€¦")
+            .setOngoing(true)
+            .setContentIntent(pi)
+            .build()
+    }
+
+    private fun pendingFlags(): Int {
+        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) PendingIntent.FLAG_IMMUTABLE else 0
+    }
+
+    companion object {
+        private const val CHANNEL_ID = "reminder_ht_alarm_service"
+        private const val NOTI_ID = 9001
+
+        private const val ACTION_PLAY = "reminder_ht.action.PLAY"
+        private const val ACTION_STOP = "reminder_ht.action.STOP"
+
+        private const val EXTRA_TITLE = "extra_title"
+        private const val EXTRA_MUSIC_URI = "extra_music_uri"
+
+        // ==== 2 HÃ€M MÃ€ AlarmReceiver.kt ÄANG Gá»ŒI ====
+
+        fun playOnce(ctx: Context, title: String, musicUriStr: String) {
+            val i = Intent(ctx, AlarmSoundService::class.java).apply {
+                action = ACTION_PLAY
+                putExtra(EXTRA_TITLE, title)
+                putExtra(EXTRA_MUSIC_URI, musicUriStr)
+            }
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                ctx.startForegroundService(i)
+            } else {
+                ctx.startService(i)
+            }
+        }
+
+        fun stop(ctx: Context) {
+            val i = Intent(ctx, AlarmSoundService::class.java).apply {
+                action = ACTION_STOP
+            }
+            ctx.startService(i)
+        }
+    }
+}
+
+--- FILE: \app\src\main\java\com\example\reminderht5\BackupManager.kt ---
+package com.example.reminderht5
+
+import android.content.Context
+import org.json.JSONObject
+import java.io.File
+
+object BackupManager {
+
+    private const val FILE_NAME = "reminder_backup.json"
+
+    fun backup(context: Context) {
+        try {
+
+            val task = TaskPrefs.loadTask(context)
+
+            val json = JSONObject().apply {
+                put("name", task.name)
+                put("enabled", task.enabled)
+                put("year", task.year)
+                put("month", task.month)
+                put("day", task.day)
+                put("hour", task.hour)
+                put("minute", task.minute)
+                put("repeatValue", task.repeatValue)
+                put("repeatUnit", task.repeatUnit)
+                put("ringCount", task.ringCount)
+                put("ringEveryMinutes", task.ringEveryMinutes)
+                put("musicUriStr", task.musicUriStr)
+            }
+
+            val file = File(context.filesDir, FILE_NAME)
+            file.writeText(json.toString())
+
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+
+    fun restore(context: Context) {
+        try {
+
+            val file = File(context.filesDir, FILE_NAME)
+            if (!file.exists()) return
+
+            val json = JSONObject(file.readText())
+
+            val task = ReminderTask(
+                taskId = 1,
+                enabled = json.getBoolean("enabled"),
+                name = json.getString("name"),
+                year = json.getInt("year"),
+                month = json.getInt("month"),
+                day = json.getInt("day"),
+                hour = json.getInt("hour"),
+                minute = json.getInt("minute"),
+                repeatValue = json.getInt("repeatValue"),
+                repeatUnit = json.getString("repeatUnit"),
+                ringCount = json.getInt("ringCount"),
+                ringEveryMinutes = json.getInt("ringEveryMinutes"),
+                musicUriStr = json.getString("musicUriStr")
+            )
+
+            TaskPrefs.saveTask(context, task)
+
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+}
+
+--- FILE: \app\src\main\java\com\example\reminderht5\BootReceiver.kt ---
+package com.example.reminderht5
+
+import android.content.BroadcastReceiver
+import android.content.Context
+import android.content.Intent
+
+class BootReceiver : BroadcastReceiver() {
+    override fun onReceive(context: Context, intent: Intent) {
+        if (intent.action != Intent.ACTION_BOOT_COMPLETED) return
+
+        val task = TaskPrefs.loadTask(context)
+        if (task.enabled) {
+            AlarmScheduler.scheduleBase(context, task)
+        }
+    }
+}
+
+--- FILE: \app\src\main\java\com\example\reminderht5\CloudSync.kt ---
+package com.example.reminderht5
+
+import android.content.Context
+import com.google.firebase.firestore.FirebaseFirestore
+
+object CloudSync {
+
+    private fun docPath(uid: String): String = "users/$uid/reminder/task"
+
+    fun uploadTask(
+        ctx: Context,
+        uid: String,
+        onDone: (ok: Boolean, msg: String) -> Unit
+    ) {
+        val t = TaskPrefs.loadTask(ctx)
+
+        val data = hashMapOf(
+            "taskId" to t.taskId,
+            "enabled" to t.enabled,
+            "name" to t.name,
+            "year" to t.year,
+            "month" to t.month,
+            "day" to t.day,
+            "hour" to t.hour,
+            "minute" to t.minute,
+            "repeatValue" to t.repeatValue,
+            "repeatUnit" to t.repeatUnit,
+            "ringCount" to t.ringCount,
+            "ringEveryMinutes" to t.ringEveryMinutes,
+            "musicUriStr" to t.musicUriStr,
+            "updatedAt" to System.currentTimeMillis()
+        )
+
+        FirebaseFirestore.getInstance()
+            .document(docPath(uid))
+            .set(data)
+            .addOnSuccessListener { onDone(true, "ÄÃ£ táº£i lÃªn cloud") }
+            .addOnFailureListener { e -> onDone(false, e.message ?: "Lá»—i upload") }
+    }
+
+    fun downloadTask(
+        ctx: Context,
+        uid: String,
+        onDone: (ok: Boolean, msg: String) -> Unit
+    ) {
+        FirebaseFirestore.getInstance()
+            .document(docPath(uid))
+            .get()
+            .addOnSuccessListener { snap ->
+                if (!snap.exists()) {
+                    onDone(false, "Cloud chÆ°a cÃ³ dá»¯ liá»‡u")
+                    return@addOnSuccessListener
+                }
+
+                fun intOf(key: String, def: Int): Int =
+                    (snap.getLong(key)?.toInt()) ?: def
+
+                val t = ReminderTask(
+                    taskId = intOf("taskId", 1),
+                    enabled = snap.getBoolean("enabled") ?: false,
+                    name = snap.getString("name") ?: "Nhiá»‡m vá»¥",
+                    year = intOf("year", 2026),
+                    month = intOf("month", 1),
+                    day = intOf("day", 1),
+                    hour = intOf("hour", 7),
+                    minute = intOf("minute", 0),
+                    repeatValue = intOf("repeatValue", 1),
+                    repeatUnit = snap.getString("repeatUnit") ?: "ThÃ¡ng",
+                    ringCount = intOf("ringCount", 10),
+                    ringEveryMinutes = intOf("ringEveryMinutes", 1),
+                    musicUriStr = snap.getString("musicUriStr") ?: ""
+                )
+
+                TaskPrefs.saveTask(ctx, t)
+                TaskPrefs.setEnabled(ctx, t.enabled)
+
+                // Náº¿u task báº­t thÃ¬ schedule láº¡i base
+                if (t.enabled) {
+                    AlarmScheduler.scheduleBase(ctx, t)
+                } else {
+                    AlarmScheduler.cancelAll(ctx, t.taskId)
+                }
+
+                onDone(true, "ÄÃ£ táº£i vá» tá»« cloud")
+            }
+            .addOnFailureListener { e ->
+                onDone(false, e.message ?: "Lá»—i download")
+            }
+    }
+}
+
+--- FILE: \app\src\main\java\com\example\reminderht5\GoogleAuth.kt ---
+package com.example.reminderht5
+
+import android.content.Context
+import android.content.Intent
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+import com.google.android.gms.common.api.ApiException
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.GoogleAuthProvider
+
+object GoogleAuth {
+
+    fun getClient(context: Context): GoogleSignInClient {
+        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+            // default_web_client_id Ä‘Æ°á»£c táº¡o tá»± Ä‘á»™ng tá»« google-services.json
+            .requestIdToken(context.getString(R.string.default_web_client_id))
+            .requestEmail()
+            .build()
+
+        return GoogleSignIn.getClient(context, gso)
+    }
+
+    fun getSignInIntent(context: Context): Intent {
+        return getClient(context).signInIntent
+    }
+
+    /**
+     * Gá»i hÃ m nÃ y khi báº¡n nháº­n Ä‘Æ°á»£c data tá»« ActivityResult (Google Sign-In)
+     * - ThÃ nh cÃ´ng -> onSuccess(uid)
+     * - Tháº¥t báº¡i -> onError(message)
+     */
+    fun handleSignInResult(
+        data: Intent?,
+        onSuccess: (uid: String) -> Unit,
+        onError: (message: String) -> Unit
+    ) {
+        val task = GoogleSignIn.getSignedInAccountFromIntent(data)
+        val account: GoogleSignInAccount = try {
+            task.getResult(ApiException::class.java)
+        } catch (e: Exception) {
+            onError(e.message ?: "Google Sign-In tháº¥t báº¡i")
+            return
+        }
+
+        val idToken = account.idToken
+        if (idToken.isNullOrBlank()) {
+            onError("KhÃ´ng láº¥y Ä‘Æ°á»£c idToken (kiá»ƒm tra SHA-1 + google-services.json)")
+            return
+        }
+
+        val credential = GoogleAuthProvider.getCredential(idToken, null)
+        FirebaseAuth.getInstance()
+            .signInWithCredential(credential)
+            .addOnSuccessListener { result ->
+                val uid = result.user?.uid
+                if (uid.isNullOrBlank()) onError("ÄÄƒng nháº­p xong nhÆ°ng uid rá»—ng")
+                else onSuccess(uid)
+            }
+            .addOnFailureListener { e ->
+                onError(e.message ?: "Firebase Auth lá»—i")
+            }
+    }
+
+    fun signOut(context: Context, onDone: () -> Unit = {}) {
+        try {
+            FirebaseAuth.getInstance().signOut()
+        } catch (_: Exception) { }
+        getClient(context).signOut().addOnCompleteListener { onDone() }
+    }
+
+    fun currentUid(): String? = FirebaseAuth.getInstance().currentUser?.uid
+}
+
+--- FILE: \app\src\main\java\com\example\reminderht5\MainActivity.kt ---
+package com.example.reminderht5
+import com.example.reminderht5.ui.theme.ReminderHTTheme
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.material3.Surface
+import com.example.reminderht5.ui.theme.ReminderHTTheme
+
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            ReminderHTTheme {
+                Surface {
+                    ReminderScreen()
+                }
+            }
+        }
+    }
+}
+
+--- FILE: \app\src\main\java\com\example\reminderht5\NotificationHelper.kt ---
+package com.example.reminderht5
+
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.app.PendingIntent
+import android.content.Context
+import android.content.Intent
+import android.media.AudioAttributes
+import android.net.Uri
+import android.os.Build
+import androidx.core.app.NotificationCompat
+import androidx.core.app.NotificationManagerCompat
+
+object NotificationHelper {
+    private const val CH_ALARM = "ch_alarm"
+
+    fun ensureChannels(ctx: Context) {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O) return
+
+        val nm = ctx.getSystemService(NotificationManager::class.java)
+
+        val sound: Uri? = null // Ä‘á»ƒ Ã¢m ALARM do AlarmActivity xá»­ lÃ½; channel chá»‰ cáº§n importance cao
+        val attrs = AudioAttributes.Builder()
+            .setUsage(AudioAttributes.USAGE_ALARM)
+            .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+            .build()
+
+        val ch = NotificationChannel(
+            CH_ALARM,
+            "BÃ¡o thá»©c",
+            NotificationManager.IMPORTANCE_HIGH
+        ).apply {
+            setSound(sound, attrs)
+            enableVibration(true)
+            lockscreenVisibility = android.app.Notification.VISIBILITY_PUBLIC
+        }
+        nm.createNotificationChannel(ch)
+    }
+
+    fun showAlarmNotification(ctx: Context, title: String, text: String) {
+        ensureChannels(ctx)
+
+        val fullIntent = Intent(ctx, AlarmActivity::class.java).apply {
+            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+        }
+        val fullPi = PendingIntent.getActivity(
+            ctx, 9999, fullIntent,
+            PendingIntent.FLAG_UPDATE_CURRENT or (if (Build.VERSION.SDK_INT >= 23) PendingIntent.FLAG_IMMUTABLE else 0)
+        )
+
+        val n = NotificationCompat.Builder(ctx, CH_ALARM)
+            .setSmallIcon(android.R.drawable.ic_lock_idle_alarm)
+            .setContentTitle(title)
+            .setContentText(text)
+            .setPriority(NotificationCompat.PRIORITY_MAX)
+            .setCategory(NotificationCompat.CATEGORY_ALARM)
+            .setAutoCancel(true)
+            .setFullScreenIntent(fullPi, true)
+            .build()
+
+        NotificationManagerCompat.from(ctx).notify(1001, n)
+    }
+}
+
+--- FILE: \app\src\main\java\com\example\reminderht5\ReminderScreen.kt ---
+package com.example.reminderht5
+
+import android.app.DatePickerDialog
+import android.app.TimePickerDialog
+import android.content.Context
+import android.content.ContextWrapper
+import android.content.Intent
+import android.net.Uri
+import android.provider.OpenableColumns
+import android.widget.Toast
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Folder
+import androidx.compose.material.icons.filled.Menu
+import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.Card
+import androidx.compose.material3.Divider
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.OutlinedButton
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Switch
+import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.rememberTopAppBarState
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
+import java.util.Calendar
+
+@Composable
+fun ReminderScreen() {
+    ReminderHomeScreen()
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun ReminderHomeScreen() {
+    val ctx = LocalContext.current
+
+    var masterPower by rememberSaveable { mutableStateOf(true) }
+
+    var taskName by rememberSaveable { mutableStateOf("") }
+    var repeatValue by rememberSaveable { mutableStateOf("1") }
+    var repeatUnit by rememberSaveable { mutableStateOf("ThÃ¡ng") }
+    var ringCount by rememberSaveable { mutableStateOf("10") }
+    var ringEveryMinutes by rememberSaveable { mutableStateOf("1") }
+
+    var timeText by rememberSaveable { mutableStateOf("ChÆ°a thiáº¿t láº­p") }
+    var pickedYear by rememberSaveable { mutableStateOf(2026) }
+    var pickedMonth by rememberSaveable { mutableStateOf(1) }
+    var pickedDay by rememberSaveable { mutableStateOf(1) }
+    var pickedHour by rememberSaveable { mutableStateOf(7) }
+    var pickedMinute by rememberSaveable { mutableStateOf(0) }
+
+    var musicUriStr by rememberSaveable { mutableStateOf("") }
+    var musicLabel by rememberSaveable { mutableStateOf("Máº·c Ä‘á»‹nh") }
+
+    // ====== Google Sign-In for Sync ======
+    var showSyncDialog by rememberSaveable { mutableStateOf(false) }
+    var signedUid by rememberSaveable { mutableStateOf(GoogleAuth.currentUid() ?: "") }
+
+    val googleSignInLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.StartActivityForResult()
+    ) { res ->
+        GoogleAuth.handleSignInResult(
+            data = res.data,
+            onSuccess = { uid ->
+                signedUid = uid
+                toast(ctx, "ÄÄƒng nháº­p OK")
+                showSyncDialog = true
+            },
+            onError = { msg ->
+                toast(ctx, msg)
+            }
+        )
+    }
+
+    // ====== Music picker ======
+    val pickMusicLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.OpenDocument()
+    ) { uri: Uri? ->
+        if (uri == null) {
+            toast(ctx, "Báº¡n chÆ°a chá»n nháº¡c")
+            return@rememberLauncherForActivityResult
+        }
+
+        try {
+            ctx.contentResolver.takePersistableUriPermission(
+                uri,
+                Intent.FLAG_GRANT_READ_URI_PERMISSION
+            )
+        } catch (_: Exception) { }
+
+        musicUriStr = uri.toString()
+        musicLabel = resolveDisplayName(ctx, uri) ?: "ÄÃ£ chá»n"
+        toast(ctx, "ÄÃ£ chá»n nháº¡c: $musicLabel")
+    }
+
+    fun pickDateThenTime() {
+        val cal = Calendar.getInstance()
+
+        DatePickerDialog(
+            ctx,
+            { _, y, m, d ->
+                pickedYear = y
+                pickedMonth = m + 1
+                pickedDay = d
+
+                TimePickerDialog(
+                    ctx,
+                    { _, hh, mm ->
+                        pickedHour = hh
+                        pickedMinute = mm
+                        timeText = "%02d/%02d/%04d %02d:%02d".format(
+                            pickedDay, pickedMonth, pickedYear, pickedHour, pickedMinute
+                        )
+                    },
+                    cal.get(Calendar.HOUR_OF_DAY),
+                    cal.get(Calendar.MINUTE),
+                    true
+                ).show()
+            },
+            cal.get(Calendar.YEAR),
+            cal.get(Calendar.MONTH),
+            cal.get(Calendar.DAY_OF_MONTH)
+        ).show()
+    }
+
+    // ====== Dropdown repeat unit ======
+    val units = listOf("NgÃ y", "ThÃ¡ng", "NÄƒm", "Giá»", "PhÃºt")
+    var unitExpanded by rememberSaveable { mutableStateOf(false) }
+
+    // ====== Delete all confirm ======
+    var showDeleteAllConfirm by rememberSaveable { mutableStateOf(false) }
+
+    // ====== Load task for list display ======
+    var currentTask by remember { mutableStateOf(TaskPrefs.loadTask(ctx)) }
+
+    LaunchedEffect(Unit) {
+        NotificationHelper.ensureChannels(ctx)
+    }
+
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = {
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Text("REMINDERHT5", fontWeight = FontWeight.ExtraBold)
+                    }
+                },
+                navigationIcon = {
+                    IconButton(onClick = { }) {
+                        Icon(Icons.Filled.Menu, contentDescription = "Menu")
+                    }
+                },
+                scrollBehavior = androidx.compose.material3.TopAppBarDefaults.pinnedScrollBehavior(
+                    rememberTopAppBarState()
+                )
+            )
+        }
+    ) { padding ->
+        Column(
+            modifier = Modifier
+                .padding(padding)
+                .fillMaxSize()
+                .padding(12.dp)
+        ) {
+            Text(
+                text = "REMINDER HT",
+                color = Color.Red,
+                fontWeight = FontWeight.ExtraBold
+            )
+
+            Spacer(Modifier.height(8.dp))
+
+            // Äá»“ng bá»™ (Google Login + Firestore)
+            Button(
+                modifier = Modifier.fillMaxWidth(),
+                onClick = {
+                    val uid = GoogleAuth.currentUid()
+                    if (uid.isNullOrBlank()) {
+                        googleSignInLauncher.launch(GoogleAuth.getSignInIntent(ctx))
+                    } else {
+                        signedUid = uid
+                        showSyncDialog = true
+                    }
+                },
+                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2ECC71))
+            ) {
+                Text("Äá»’NG Bá»˜", fontWeight = FontWeight.Bold)
+            }
+
+            Spacer(Modifier.height(8.dp))
+
+            // Nguá»“n Ä‘iá»‡n
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Text("NGUá»’N ÄIá»†N Tá»”NG:")
+                Switch(
+                    checked = masterPower,
+                    onCheckedChange = { masterPower = it }
+                )
+            }
+
+            Spacer(Modifier.height(8.dp))
+
+            // Hai nÃºt Táº¡m dá»«ng / Dá»«ng háº³n
+            Row(modifier = Modifier.fillMaxWidth()) {
+                Button(
+                    onClick = {
+                        AlarmSoundService.stop(ctx)
+                        toast(ctx, "Táº¡m dá»«ng")
+                    },
+                    modifier = Modifier.weight(1f),
+                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFF1C40F))
+                ) {
+                    Text("Táº M Dá»ªNG", color = Color.White, fontWeight = FontWeight.Bold)
+                }
+
+                Spacer(Modifier.width(8.dp))
+
+                Button(
+                    onClick = {
+                        val t = TaskPrefs.loadTask(ctx)
+                        AlarmSoundService.stop(ctx)
+                        AlarmScheduler.cancelAll(ctx, t.taskId)
+                        TaskPrefs.setEnabled(ctx, false)
+                        toast(ctx, "ÄÃ£ dá»«ng háº³n")
+                        currentTask = TaskPrefs.loadTask(ctx)
+                    },
+                    modifier = Modifier.weight(1f),
+                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFE74C3C))
+                ) {
+                    Text("Dá»ªNG Háº²N", color = Color.White, fontWeight = FontWeight.Bold)
+                }
+            }
+
+            Spacer(Modifier.height(12.dp))
+
+            // Báº£ng Ä‘iá»u khiá»ƒn
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                shape = RoundedCornerShape(12.dp)
+            ) {
+                Column(modifier = Modifier.padding(12.dp)) {
+                    Text(
+                        "Báº¢NG ÄIá»€U KHIá»‚N",
+                        color = Color(0xFF2ECC71),
+                        fontWeight = FontWeight.ExtraBold,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .background(Color(0xFFEAECEE))
+                            .padding(8.dp)
+                    )
+
+                    Spacer(Modifier.height(8.dp))
+
+                    OutlinedTextField(
+                        value = taskName,
+                        onValueChange = { taskName = it },
+                        label = { Text("TÃªn nhiá»‡m vá»¥") },
+                        modifier = Modifier.fillMaxWidth()
+                    )
+
+                    Spacer(Modifier.height(8.dp))
+
+                    // chá»n giá»
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Button(
+                            onClick = { pickDateThenTime() },
+                            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2ECC71))
+                        ) {
+                            Text("CHá»ŒN GIá»œ", color = Color.White, fontWeight = FontWeight.Bold)
+                        }
+                        Spacer(Modifier.width(12.dp))
+                        Text(timeText)
+                    }
+
+                    Spacer(Modifier.height(10.dp))
+
+                    Text("Láº·p láº¡i má»—i", color = Color.Gray)
+
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        OutlinedTextField(
+                            value = repeatValue,
+                            onValueChange = { repeatValue = it.filter { ch -> ch.isDigit() }.ifBlank { "" } },
+                            modifier = Modifier.weight(1f),
+                            singleLine = true
+                        )
+                        Spacer(Modifier.width(8.dp))
+                        Box(modifier = Modifier.weight(1f)) {
+                            OutlinedButton(
+                                onClick = { unitExpanded = true },
+                                modifier = Modifier.fillMaxWidth()
+                            ) {
+                                Text(repeatUnit)
+                            }
+                            DropdownMenu(
+                                expanded = unitExpanded,
+                                onDismissRequest = { unitExpanded = false }
+                            ) {
+                                units.forEach { u ->
+                                    DropdownMenuItem(
+                                        text = { Text(u) },
+                                        onClick = {
+                                            repeatUnit = u
+                                            unitExpanded = false
+                                        }
+                                    )
+                                }
+                            }
+                        }
+                    }
+
+                    Spacer(Modifier.height(10.dp))
+
+                    Text("Sá»‘ láº§n bÃ¡o thá»©c | CÃ¡ch phÃºt:", color = Color.Gray)
+
+                    Row(modifier = Modifier.fillMaxWidth()) {
+                        OutlinedTextField(
+                            value = ringCount,
+                            onValueChange = { ringCount = it.filter { ch -> ch.isDigit() }.ifBlank { "" } },
+                            modifier = Modifier.weight(1f),
+                            singleLine = true
+                        )
+                        Spacer(Modifier.width(8.dp))
+                        OutlinedTextField(
+                            value = ringEveryMinutes,
+                            onValueChange = { ringEveryMinutes = it.filter { ch -> ch.isDigit() }.ifBlank { "" } },
+                            modifier = Modifier.weight(1f),
+                            singleLine = true
+                        )
+                    }
+
+                    Spacer(Modifier.height(10.dp))
+
+                    // Nháº¡c
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        OutlinedButton(
+                            onClick = {
+                                pickMusicLauncher.launch(arrayOf("audio/*"))
+                            }
+                        ) {
+                            Text("NHáº C", color = Color.Black)
+                        }
+                        Spacer(Modifier.width(12.dp))
+                        Text(musicLabel)
+                    }
+
+                    Spacer(Modifier.height(12.dp))
+
+                    // KÃ­ch hoáº¡t nhiá»‡m vá»¥ má»›i
+                    Button(
+                        modifier = Modifier.fillMaxWidth(),
+                        onClick = {
+                            val rv = repeatValue.toIntOrNull() ?: 1
+                            val rc = ringCount.toIntOrNull() ?: 10
+                            val rem = ringEveryMinutes.toIntOrNull() ?: 1
+
+                            val t = ReminderTask(
+                                taskId = (System.currentTimeMillis() % Int.MAX_VALUE).toInt(),
+                                enabled = true,
+                                name = taskName.ifBlank { "Nhiá»‡m vá»¥" },
+                                year = pickedYear,
+                                month = pickedMonth,
+                                day = pickedDay,
+                                hour = pickedHour,
+                                minute = pickedMinute,
+                                repeatValue = rv,
+                                repeatUnit = repeatUnit,
+                                ringCount = rc,
+                                ringEveryMinutes = rem,
+                                musicUriStr = musicUriStr
+                            )
+
+                            TaskPrefs.saveTask(ctx, t)
+                            TaskPrefs.setEnabled(ctx, true)
+
+                            AlarmScheduler.scheduleBase(ctx, t)
+
+                            toast(ctx, "ÄÃ£ kÃ­ch hoáº¡t nhiá»‡m vá»¥ má»›i")
+                            timeText = "ChÆ°a thiáº¿t láº­p"
+                            taskName = ""
+                            currentTask = TaskPrefs.loadTask(ctx)
+                        },
+                        enabled = masterPower,
+                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2ECC71))
+                    ) {
+                        Text("KÃCH HOáº T NHIá»†M Vá»¤ Má»šI", fontWeight = FontWeight.ExtraBold)
+                    }
+
+                    Spacer(Modifier.height(10.dp))
+
+                    // Dá»«ng ngay
+                    OutlinedButton(
+                        onClick = {
+                            val t = TaskPrefs.loadTask(ctx)
+                            AlarmSoundService.stop(ctx)
+                            AlarmScheduler.cancelAll(ctx, t.taskId)
+                            TaskPrefs.setEnabled(ctx, false)
+                            toast(ctx, "ÄÃ£ dá»«ng")
+                            currentTask = TaskPrefs.loadTask(ctx)
+                        },
+                        modifier = Modifier.fillMaxWidth(),
+                        enabled = masterPower
+                    ) {
+                        Text("Dá»ªNG (Táº®T NGAY)")
+                    }
+                }
+            }
+
+            Spacer(Modifier.height(12.dp))
+
+            // Há»“ sÆ¡ Ä‘ang cháº¡y + xoÃ¡ táº¥t cáº£
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Icon(Icons.Filled.Folder, contentDescription = "Folder")
+                Spacer(Modifier.width(8.dp))
+                Text("Há»’ SÆ  ÄANG CHáº Y", fontWeight = FontWeight.ExtraBold)
+                Spacer(Modifier.weight(1f))
+                Button(
+                    onClick = { showDeleteAllConfirm = true },
+                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFE74C3C))
+                ) {
+                    Text("XOÃ Táº¤T Cáº¢", color = Color.White, fontWeight = FontWeight.Bold)
+                }
+            }
+
+            Divider(Modifier.padding(vertical = 8.dp))
+
+            // Danh sÃ¡ch (báº£n Ä‘Æ¡n giáº£n - 1 nhiá»‡m vá»¥)
+            Card(shape = RoundedCornerShape(16.dp)) {
+                val t = currentTask
+                Column(modifier = Modifier.padding(12.dp)) {
+                    Text("TÃªn: ${t.name}")
+                    Text("Báº­t: ${t.enabled}")
+                    Text("Giá»: ${t.month}/${t.day} ${t.hour}:${t.minute}")
+                    Text("Láº·p: ${t.repeatValue} ${t.repeatUnit}")
+                    Text("Reo: ${t.ringCount} láº§n / ${t.ringEveryMinutes} phÃºt")
+                    Text("Nháº¡c: ${if (t.musicUriStr.isBlank()) "Máº·c Ä‘á»‹nh" else "ÄÃ£ chá»n"}")
+                }
+            }
+
+            Spacer(Modifier.height(8.dp))
+        }
+    }
+
+    // ====== Sync Dialog ======
+    if (showSyncDialog) {
+        AlertDialog(
+            onDismissRequest = { showSyncDialog = false },
+            title = { Text("Äá»’NG Bá»˜") },
+            text = { Text("Chá»n thao tÃ¡c Ä‘á»“ng bá»™ vá»›i Cloud") },
+            confirmButton = {
+                Button(
+                    onClick = {
+                        val uid = signedUid.ifBlank { GoogleAuth.currentUid().orEmpty() }
+                        if (uid.isBlank()) {
+                            toast(ctx, "ChÆ°a Ä‘Äƒng nháº­p")
+                            return@Button
+                        }
+                        CloudSync.uploadTask(ctx, uid) { _, msg ->
+                            toast(ctx, msg)
+                            showSyncDialog = false
+                        }
+                    }
+                ) { Text("Táº¢I LÃŠN CLOUD") }
+            },
+            dismissButton = {
+                Row {
+                    OutlinedButton(
+                        onClick = {
+                            val uid = signedUid.ifBlank { GoogleAuth.currentUid().orEmpty() }
+                            if (uid.isBlank()) {
+                                toast(ctx, "ChÆ°a Ä‘Äƒng nháº­p")
+                                return@OutlinedButton
+                            }
+                            CloudSync.downloadTask(ctx, uid) { _, msg ->
+                                toast(ctx, msg)
+                                currentTask = TaskPrefs.loadTask(ctx)
+                                showSyncDialog = false
+                            }
+                        }
+                    ) { Text("Táº¢I Vá»€ MÃY") }
+
+                    Spacer(Modifier.width(8.dp))
+
+                    OutlinedButton(
+                        onClick = {
+                            GoogleAuth.signOut(ctx) {
+                                signedUid = ""
+                                toast(ctx, "ÄÃ£ Ä‘Äƒng xuáº¥t")
+                                showSyncDialog = false
+                            }
+                        }
+                    ) { Text("ÄÄ‚NG XUáº¤T") }
+                }
+            }
+        )
+    }
+
+    // Confirm delete all
+    if (showDeleteAllConfirm) {
+        AlertDialog(
+            onDismissRequest = { showDeleteAllConfirm = false },
+            title = { Text("XoÃ¡ táº¥t cáº£?") },
+            text = { Text("Báº¡n cÃ³ cháº¯c muá»‘n xoÃ¡ toÃ n bá»™ há»“ sÆ¡ nhiá»‡m vá»¥?") },
+            confirmButton = {
+                Button(
+                    onClick = {
+                        val t = TaskPrefs.loadTask(ctx)
+                        AlarmSoundService.stop(ctx)
+                        AlarmScheduler.cancelAll(ctx, t.taskId)
+                        TaskPrefs.clear(ctx)
+                        toast(ctx, "ÄÃ£ xoÃ¡ táº¥t cáº£")
+                        currentTask = TaskPrefs.loadTask(ctx)
+                        showDeleteAllConfirm = false
+                    }
+                ) { Text("XÃ¡c nháº­n") }
+            },
+            dismissButton = {
+                OutlinedButton(onClick = { showDeleteAllConfirm = false }) { Text("Huá»·") }
+            }
+        )
+    }
+}
+
+private fun toast(ctx: Context, msg: String) {
+    Toast.makeText(ctx, msg, Toast.LENGTH_SHORT).show()
+}
+
+private fun resolveDisplayName(ctx: Context, uri: Uri): String? {
+    return try {
+        ctx.contentResolver.query(uri, null, null, null, null)?.use { cur ->
+            val nameIndex = cur.getColumnIndex(OpenableColumns.DISPLAY_NAME)
+            if (nameIndex >= 0 && cur.moveToFirst()) cur.getString(nameIndex) else null
+        }
+    } catch (_: Exception) {
+        null
+    }
+}
+
+private fun Context.findActivity(): ComponentActivity? {
+    var c = this
+    while (c is ContextWrapper) {
+        if (c is ComponentActivity) return c
+        c = c.baseContext
+    }
+    return null
+}
+
+--- FILE: \app\src\main\java\com\example\reminderht5\ReminderTask.kt ---
+package com.example.reminderht5
+
+data class ReminderTask(
+    val taskId: Int = 1,
+    val enabled: Boolean = false,
+
+    val name: String = "Nhiá»‡m vá»¥",
+
+    // thá»i Ä‘iá»ƒm háº¹n Ä‘áº§u tiÃªn
+    val year: Int = 2026,
+    val month: Int = 1,   // 1..12
+    val day: Int = 1,     // 1..31
+    val hour: Int = 7,    // 0..23
+    val minute: Int = 0,  // 0..59
+
+    // láº·p láº¡i
+    val repeatValue: Int = 1,
+    val repeatUnit: String = "ThÃ¡ng", // "Giá»" "NgÃ y" "Tuáº§n" "ThÃ¡ng" "NÄƒm"
+
+    // reo láº¡i
+    val ringCount: Int = 10,
+    val ringEveryMinutes: Int = 1,
+
+    // nháº¡c chuÃ´ng do user chá»n (content://...)
+    val musicUriStr: String = ""
+)
+
+--- FILE: \app\src\main\java\com\example\reminderht5\TaskPrefs.kt ---
+package com.example.reminderht5
+
+import android.content.Context
+
+object TaskPrefs {
+    private const val PREF = "reminder_prefs"
+
+    private const val KEY_ENABLED = "enabled"
+    private const val KEY_ID = "task_id"
+    private const val KEY_NAME = "name"
+
+    private const val KEY_YEAR = "year"
+    private const val KEY_MONTH = "month"
+    private const val KEY_DAY = "day"
+    private const val KEY_HOUR = "hour"
+    private const val KEY_MIN = "minute"
+
+    private const val KEY_REPEAT_VALUE = "repeat_value"
+    private const val KEY_REPEAT_UNIT = "repeat_unit"
+
+    private const val KEY_RING_COUNT = "ring_count"
+    private const val KEY_RING_EVERY = "ring_every"
+
+    private const val KEY_MUSIC_URI = "music_uri"
+
+    fun saveTask(ctx: Context, t: ReminderTask) {
+        val sp = ctx.getSharedPreferences(PREF, Context.MODE_PRIVATE)
+        sp.edit()
+            .putBoolean(KEY_ENABLED, t.enabled)
+            .putInt(KEY_ID, t.taskId)
+            .putString(KEY_NAME, t.name)
+
+            .putInt(KEY_YEAR, t.year)
+            .putInt(KEY_MONTH, t.month)
+            .putInt(KEY_DAY, t.day)
+            .putInt(KEY_HOUR, t.hour)
+            .putInt(KEY_MIN, t.minute)
+
+            .putInt(KEY_REPEAT_VALUE, t.repeatValue)
+            .putString(KEY_REPEAT_UNIT, t.repeatUnit)
+
+            .putInt(KEY_RING_COUNT, t.ringCount)
+            .putInt(KEY_RING_EVERY, t.ringEveryMinutes)
+
+            .putString(KEY_MUSIC_URI, t.musicUriStr)
+            .apply()
+    }
+
+    fun loadTask(ctx: Context): ReminderTask {
+        val sp = ctx.getSharedPreferences(PREF, Context.MODE_PRIVATE)
+
+        return ReminderTask(
+            taskId = sp.getInt(KEY_ID, 1),
+            enabled = sp.getBoolean(KEY_ENABLED, false),
+
+            name = sp.getString(KEY_NAME, "Nhiá»‡m vá»¥") ?: "Nhiá»‡m vá»¥",
+
+            year = sp.getInt(KEY_YEAR, 2026),
+            month = sp.getInt(KEY_MONTH, 1),
+            day = sp.getInt(KEY_DAY, 1),
+            hour = sp.getInt(KEY_HOUR, 7),
+            minute = sp.getInt(KEY_MIN, 0),
+
+            repeatValue = sp.getInt(KEY_REPEAT_VALUE, 1),
+            repeatUnit = sp.getString(KEY_REPEAT_UNIT, "ThÃ¡ng") ?: "ThÃ¡ng",
+
+            ringCount = sp.getInt(KEY_RING_COUNT, 10),
+            ringEveryMinutes = sp.getInt(KEY_RING_EVERY, 1),
+
+            musicUriStr = sp.getString(KEY_MUSIC_URI, "") ?: ""
+        )
+    }
+
+    fun setEnabled(ctx: Context, enabled: Boolean) {
+        val cur = loadTask(ctx).copy(enabled = enabled)
+        saveTask(ctx, cur)
+    }
+
+    fun clear(ctx: Context) {
+        val sp = ctx.getSharedPreferences(PREF, Context.MODE_PRIVATE)
+        sp.edit().clear().apply()
+
+    }
+}
+
+--- FILE: \app\src\test\java\com\example\reminderht5\ExampleUnitTest.kt ---
+package com.example.reminderht5
+
+import org.junit.Test
+
+import org.junit.Assert.*
+
+/**
+ * Example local unit test, which will execute on the development machine (host).
+ *
+ * See [testing documentation](http://d.android.com/tools/testing).
+ */
+class ExampleUnitTest {
+    @Test
+    fun addition_isCorrect() {
+        assertEquals(4, 2 + 2)
+    }
+}
