@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "517919520884",
+    "project_id": "reminderht5-3ed58",
+    "storage_bucket": "reminderht5-3ed58.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517919520884:android:f4076e19f8fe9c93b27921",
+        "android_client_info": {
+          "package_name": "com.example.reminderht5"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "517919520884-itmmu13tn5mrfd5mrdcuj205be7niufr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIRNQgbCpjOGvgJxDjgOuy9p70FnfxTLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "517919520884-itmmu13tn5mrfd5mrdcuj205be7niufr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
