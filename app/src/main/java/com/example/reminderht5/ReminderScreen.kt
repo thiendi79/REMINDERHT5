@@ -11,11 +11,8 @@ import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
-import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.verticalScroll
-import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -26,6 +23,10 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import com.google.accompanist.pager.HorizontalPager
+import com.google.accompanist.pager.rememberPagerState
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Folder
@@ -43,7 +44,6 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.rememberTopAppBarState
@@ -67,7 +67,7 @@ fun ReminderScreen() {
     ReminderHomeScreen()
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)
 @Composable
 fun ReminderHomeScreen() {
     val ctx = LocalContext.current
@@ -172,10 +172,12 @@ fun ReminderHomeScreen() {
     var currentTask by remember { mutableStateOf(TaskPrefs.loadTask(ctx)) }
 
     LaunchedEffect(Unit) {
-
         NotificationHelper.ensureChannels(ctx)
     }
-    val scrollState = rememberScrollState()
+
+    // Pager 2 trang
+    val pagerState = rememberPagerState(initialPage = 0)
+
     Scaffold(
         topBar = {
             TopAppBar(
@@ -195,292 +197,293 @@ fun ReminderHomeScreen() {
             )
         }
     ) { padding ->
-        Column(
+
+        HorizontalPager(
+            count = 2,
+            state = pagerState,
             modifier = Modifier
                 .padding(padding)
                 .fillMaxSize()
-                .verticalScroll(scrollState)
-                .padding(12.dp)
-        ) {
+        ) { page ->
 
+            when (page) {
 
-            // Đồng bộ (Google Login + Firestore)
-            Button(
-                modifier = Modifier.fillMaxWidth(),
-                onClick = {
-                    val uid = GoogleAuth.currentUid()
-                    if (uid.isNullOrBlank()) {
-                        googleSignInLauncher.launch(GoogleAuth.getSignInIntent(ctx))
-                    } else {
-                        signedUid = uid
-                        showSyncDialog = true
-                    }
-                },
-                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2ECC71))
-            ) {
-                Text("ĐỒNG BỘ", fontWeight = FontWeight.Bold)
-            }
-
-            Spacer(Modifier.height(8.dp))
-
-            // Chọn nhạc chuông
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Button(
-                    onClick = { pickMusicLauncher.launch(arrayOf("audio/*")) },
-                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2ECC71))
-                ) {
-                    Text("CHỌN NHẠC CHUÔNG", color = Color.White, fontWeight = FontWeight.Bold)
-                }
-                Spacer(Modifier.width(12.dp))
-                Text(musicLabel)
-            }
-
-            Spacer(Modifier.height(8.dp))
-
-            // Hai nút Tạm dừng / Dừng hẳn
-            Row(modifier = Modifier.fillMaxWidth()) {
-                Button(
-                    onClick = {
-                        AlarmSoundService.stop(ctx)
-                        toast(ctx, "Tạm dừng")
-                    },
-                    modifier = Modifier.weight(1f),
-                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFF1C40F))
-                ) {
-                    Text("TẠM DỪNG", color = Color.White, fontWeight = FontWeight.Bold)
-                }
-
-                Spacer(Modifier.width(8.dp))
-
-                Button(
-                    onClick = {
-                        val t = TaskPrefs.loadTask(ctx)
-                        AlarmSoundService.stop(ctx)
-                        AlarmScheduler.cancelAll(ctx, t.taskId)
-                        TaskPrefs.setEnabled(ctx, false)
-                        toast(ctx, "Đã dừng hẳn")
-                        currentTask = TaskPrefs.loadTask(ctx)
-                    },
-                    modifier = Modifier.weight(1f),
-                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFE74C3C))
-                ) {
-                    Text("DỪNG HẲN", color = Color.White, fontWeight = FontWeight.Bold)
-                }
-            }
-
-            Spacer(Modifier.height(12.dp))
-
-            // Bảng điều khiển
-            Card(
-                modifier = Modifier.fillMaxWidth(),
-                shape = RoundedCornerShape(12.dp)
-            ) {
-                Column(modifier = Modifier.padding(12.dp)) {
-                    Text(
-                        "BẢNG ĐIỀU KHIỂN",
-                        color = Color(0xFF2ECC71),
-                        fontWeight = FontWeight.ExtraBold,
+                0 -> {
+                    // ===== TRANG 1: chỉ giữ tới "KÍCH HOẠT NHIỆM VỤ MỚI" =====
+                    Column(
                         modifier = Modifier
-                            .fillMaxWidth()
-                            .background(Color(0xFFEAECEE))
-                            .padding(8.dp)
-                    )
-
-                    Spacer(Modifier.height(8.dp))
-
-                    OutlinedTextField(
-                        value = taskName,
-                        onValueChange = { taskName = it },
-                        label = { Text("Tên nhiệm vụ") },
-                        modifier = Modifier.fillMaxWidth()
-                    )
-
-                    Spacer(Modifier.height(8.dp))
-
-                    // chọn giờ
-                    Row(
-                        modifier = Modifier.fillMaxWidth(),
-                        verticalAlignment = Alignment.CenterVertically
+                            .fillMaxSize()
+                            .padding(12.dp)
                     ) {
+
+                        // Đồng bộ (Google Login + Firestore)
                         Button(
-                            onClick = { pickDateThenTime() },
+                            modifier = Modifier.fillMaxWidth(),
+                            onClick = {
+                                val uid = GoogleAuth.currentUid()
+                                if (uid.isNullOrBlank()) {
+                                    googleSignInLauncher.launch(GoogleAuth.getSignInIntent(ctx))
+                                } else {
+                                    signedUid = uid
+                                    showSyncDialog = true
+                                }
+                            },
                             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2ECC71))
                         ) {
-                            Text("CHỌN GIỜ", color = Color.White, fontWeight = FontWeight.Bold)
+                            Text("ĐỒNG BỘ", fontWeight = FontWeight.Bold)
                         }
-                        Spacer(Modifier.width(12.dp))
-                        Text(timeText)
-                    }
 
-                    Spacer(Modifier.height(10.dp))
+                        Spacer(Modifier.height(8.dp))
 
-                    Text("Lặp lại mỗi", color = Color.Gray)
-
-                    Row(
-                        modifier = Modifier.fillMaxWidth(),
-                        verticalAlignment = Alignment.CenterVertically
-                    ) {
-                        OutlinedTextField(
-                            value = repeatValue,
-                            onValueChange = { repeatValue = it.filter { ch -> ch.isDigit() }.ifBlank { "" } },
-                            modifier = Modifier.weight(1f),
-                            singleLine = true
-                        )
-                        Spacer(Modifier.width(8.dp))
-                        Box(modifier = Modifier.weight(1f)) {
-                            OutlinedButton(
-                                onClick = { unitExpanded = true },
-                                modifier = Modifier.fillMaxWidth()
+                        // Chọn nhạc chuông
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Button(
+                                onClick = { pickMusicLauncher.launch(arrayOf("audio/*")) },
+                                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2ECC71))
                             ) {
-                                Text(repeatUnit)
+                                Text("CHỌN NHẠC CHUÔNG", color = Color.White, fontWeight = FontWeight.Bold)
                             }
-                            DropdownMenu(
-                                expanded = unitExpanded,
-                                onDismissRequest = { unitExpanded = false }
+                            Spacer(Modifier.width(12.dp))
+                            Text(musicLabel)
+                        }
+
+                        Spacer(Modifier.height(8.dp))
+
+                        // Hai nút Tạm dừng / Dừng hẳn
+                        Row(modifier = Modifier.fillMaxWidth()) {
+                            Button(
+                                onClick = {
+                                    AlarmSoundService.stop(ctx)
+                                    toast(ctx, "Tạm dừng")
+                                },
+                                modifier = Modifier.weight(1f),
+                                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFF1C40F))
                             ) {
-                                units.forEach { u ->
-                                    DropdownMenuItem(
-                                        text = { Text(u) },
-                                        onClick = {
-                                            repeatUnit = u
-                                            unitExpanded = false
-                                        }
+                                Text("TẠM DỪNG", color = Color.White, fontWeight = FontWeight.Bold)
+                            }
+
+                            Spacer(Modifier.width(8.dp))
+
+                            Button(
+                                onClick = {
+                                    val t = TaskPrefs.loadTask(ctx)
+                                    AlarmSoundService.stop(ctx)
+                                    AlarmScheduler.cancelAll(ctx, t.taskId)
+                                    TaskPrefs.setEnabled(ctx, false)
+                                    toast(ctx, "Đã dừng hẳn")
+                                    currentTask = TaskPrefs.loadTask(ctx)
+                                },
+                                modifier = Modifier.weight(1f),
+                                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFE74C3C))
+                            ) {
+                                Text("DỪNG HẲN", color = Color.White, fontWeight = FontWeight.Bold)
+                            }
+                        }
+
+                        Spacer(Modifier.height(12.dp))
+
+                        // Bảng điều khiển
+                        Card(
+                            modifier = Modifier.fillMaxWidth(),
+                            shape = RoundedCornerShape(12.dp)
+                        ) {
+                            Column(modifier = Modifier.padding(12.dp)) {
+                                Text(
+                                    "BẢNG ĐIỀU KHIỂN",
+                                    color = Color(0xFF2ECC71),
+                                    fontWeight = FontWeight.ExtraBold,
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .background(Color(0xFFEAECEE))
+                                        .padding(8.dp)
+                                )
+
+                                Spacer(Modifier.height(8.dp))
+
+                                OutlinedTextField(
+                                    value = taskName,
+                                    onValueChange = { taskName = it },
+                                    label = { Text("Tên nhiệm vụ") },
+                                    modifier = Modifier.fillMaxWidth()
+                                )
+
+                                Spacer(Modifier.height(8.dp))
+
+                                // chọn giờ
+                                Row(
+                                    modifier = Modifier.fillMaxWidth(),
+                                    verticalAlignment = Alignment.CenterVertically
+                                ) {
+                                    Button(
+                                        onClick = { pickDateThenTime() },
+                                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2ECC71))
+                                    ) {
+                                        Text("CHỌN GIỜ", color = Color.White, fontWeight = FontWeight.Bold)
+                                    }
+                                    Spacer(Modifier.width(12.dp))
+                                    Text(timeText)
+                                }
+
+                                Spacer(Modifier.height(10.dp))
+
+                                Text("Lặp lại mỗi", color = Color.Gray)
+
+                                Row(
+                                    modifier = Modifier.fillMaxWidth(),
+                                    verticalAlignment = Alignment.CenterVertically
+                                ) {
+                                    OutlinedTextField(
+                                        value = repeatValue,
+                                        onValueChange = { repeatValue = it.filter { ch -> ch.isDigit() }.ifBlank { "" } },
+                                        modifier = Modifier.weight(1f),
+                                        singleLine = true
                                     )
+                                    Spacer(Modifier.width(8.dp))
+                                    Box(modifier = Modifier.weight(1f)) {
+                                        OutlinedButton(
+                                            onClick = { unitExpanded = true },
+                                            modifier = Modifier.fillMaxWidth()
+                                        ) {
+                                            Text(repeatUnit)
+                                        }
+                                        DropdownMenu(
+                                            expanded = unitExpanded,
+                                            onDismissRequest = { unitExpanded = false }
+                                        ) {
+                                            units.forEach { u ->
+                                                DropdownMenuItem(
+                                                    text = { Text(u) },
+                                                    onClick = {
+                                                        repeatUnit = u
+                                                        unitExpanded = false
+                                                    }
+                                                )
+                                            }
+                                        }
+                                    }
+                                }
+
+                                Spacer(Modifier.height(10.dp))
+
+                                Text("Số lần báo thức | Cách phút:", color = Color.Gray)
+
+                                Row(modifier = Modifier.fillMaxWidth()) {
+                                    OutlinedTextField(
+                                        value = ringCount,
+                                        onValueChange = { ringCount = it.filter { ch -> ch.isDigit() }.ifBlank { "" } },
+                                        modifier = Modifier.weight(1f),
+                                        singleLine = true
+                                    )
+                                    Spacer(Modifier.width(8.dp))
+                                    OutlinedTextField(
+                                        value = ringEveryMinutes,
+                                        onValueChange = { ringEveryMinutes = it.filter { ch -> ch.isDigit() }.ifBlank { "" } },
+                                        modifier = Modifier.weight(1f),
+                                        singleLine = true
+                                    )
+                                }
+
+                                Spacer(Modifier.height(12.dp))
+
+                                // Kích hoạt nhiệm vụ mới
+                                Button(
+                                    modifier = Modifier.fillMaxWidth(),
+                                    onClick = {
+                                        val rv = repeatValue.toIntOrNull() ?: 1
+                                        val rc = ringCount.toIntOrNull() ?: 10
+                                        val rem = ringEveryMinutes.toIntOrNull() ?: 1
+
+                                        val t = ReminderTask(
+                                            taskId = (System.currentTimeMillis() % Int.MAX_VALUE).toInt(),
+                                            enabled = true,
+                                            name = taskName.ifBlank { "Nhiệm vụ" },
+                                            year = pickedYear,
+                                            month = pickedMonth,
+                                            day = pickedDay,
+                                            hour = pickedHour,
+                                            minute = pickedMinute,
+                                            repeatValue = rv,
+                                            repeatUnit = repeatUnit,
+                                            ringCount = rc,
+                                            ringEveryMinutes = rem,
+                                            musicUriStr = musicUriStr
+                                        )
+
+                                        TaskPrefs.saveTask(ctx, t)
+                                        TaskPrefs.setEnabled(ctx, true)
+
+                                        AlarmScheduler.scheduleBase(ctx, t)
+
+                                        toast(ctx, "Đã kích hoạt nhiệm vụ mới")
+                                        timeText = "Chưa thiết lập"
+                                        taskName = ""
+                                        currentTask = TaskPrefs.loadTask(ctx)
+                                    },
+                                    enabled = masterPower,
+                                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2ECC71))
+                                ) {
+                                    Text("KÍCH HOẠT NHIỆM VỤ MỚI", fontWeight = FontWeight.ExtraBold)
                                 }
                             }
                         }
+
+                        // Trang 1 chỉ giữ tới đây.
+                        // (Không có: "DỪNG (TẮT NGAY)", không có: "HỒ SƠ ĐANG CHẠY")
                     }
+                }
 
-                    Spacer(Modifier.height(10.dp))
-
-                    Text("Số lần báo thức | Cách phút:", color = Color.Gray)
-
-                    Row(modifier = Modifier.fillMaxWidth()) {
-                        OutlinedTextField(
-                            value = ringCount,
-                            onValueChange = { ringCount = it.filter { ch -> ch.isDigit() }.ifBlank { "" } },
-                            modifier = Modifier.weight(1f),
-                            singleLine = true
-                        )
-                        Spacer(Modifier.width(8.dp))
-                        OutlinedTextField(
-                            value = ringEveryMinutes,
-                            onValueChange = { ringEveryMinutes = it.filter { ch -> ch.isDigit() }.ifBlank { "" } },
-                            modifier = Modifier.weight(1f),
-                            singleLine = true
-                        )
-                    }
-
-                    Spacer(Modifier.height(10.dp))
-
-                    // Nhạc
-                    Row(
-                        modifier = Modifier.fillMaxWidth(),
-                        verticalAlignment = Alignment.CenterVertically
+                1 -> {
+                    // ===== TRANG 2: hồ sơ + xoá + danh sách cuộn dài =====
+                    LazyColumn(
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .padding(12.dp),
+                        verticalArrangement = Arrangement.Top
                     ) {
-                        
-                    }
 
-                    Spacer(Modifier.height(12.dp))
+                        item {
+                            Row(
+                                modifier = Modifier.fillMaxWidth(),
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                Icon(Icons.Filled.Folder, contentDescription = "Folder")
+                                Spacer(Modifier.width(8.dp))
+                                Text("HỒ SƠ ĐANG CHẠY", fontWeight = FontWeight.ExtraBold)
+                                Spacer(Modifier.weight(1f))
+                                Button(
+                                    onClick = { showDeleteAllConfirm = true },
+                                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFE74C3C))
+                                ) {
+                                    Text("XOÁ TẤT CẢ", color = Color.White, fontWeight = FontWeight.Bold)
+                                }
+                            }
 
-                    // Kích hoạt nhiệm vụ mới
-                    Button(
-                        modifier = Modifier.fillMaxWidth(),
-                        onClick = {
-                            val rv = repeatValue.toIntOrNull() ?: 1
-                            val rc = ringCount.toIntOrNull() ?: 10
-                            val rem = ringEveryMinutes.toIntOrNull() ?: 1
+                            Divider(Modifier.padding(vertical = 8.dp))
+                        }
 
-                            val t = ReminderTask(
-                                taskId = (System.currentTimeMillis() % Int.MAX_VALUE).toInt(),
-                                enabled = true,
-                                name = taskName.ifBlank { "Nhiệm vụ" },
-                                year = pickedYear,
-                                month = pickedMonth,
-                                day = pickedDay,
-                                hour = pickedHour,
-                                minute = pickedMinute,
-                                repeatValue = rv,
-                                repeatUnit = repeatUnit,
-                                ringCount = rc,
-                                ringEveryMinutes = rem,
-                                musicUriStr = musicUriStr
-                            )
+                        item {
+                            Card(shape = RoundedCornerShape(16.dp)) {
+                                val t = currentTask
+                                Column(modifier = Modifier.padding(12.dp)) {
+                                    Text("Tên: ${t.name}")
+                                    Text("Bật: ${t.enabled}")
+                                    Text("Giờ: ${t.month}/${t.day} ${t.hour}:${t.minute}")
+                                    Text("Lặp: ${t.repeatValue} ${t.repeatUnit}")
+                                    Text("Reo: ${t.ringCount} lần / ${t.ringEveryMinutes} phút")
+                                    Text("Nhạc: ${if (t.musicUriStr.isBlank()) "Mặc định" else "Đã chọn"}")
+                                }
+                            }
 
-                            TaskPrefs.saveTask(ctx, t)
-                            TaskPrefs.setEnabled(ctx, true)
+                            Spacer(Modifier.height(8.dp))
+                        }
 
-                            AlarmScheduler.scheduleBase(ctx, t)
-
-                            toast(ctx, "Đã kích hoạt nhiệm vụ mới")
-                            timeText = "Chưa thiết lập"
-                            taskName = ""
-                            currentTask = TaskPrefs.loadTask(ctx)
-                        },
-                        enabled = masterPower,
-                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2ECC71))
-                    ) {
-                        Text("KÍCH HOẠT NHIỆM VỤ MỚI", fontWeight = FontWeight.ExtraBold)
-                    }
-
-                    Spacer(Modifier.height(10.dp))
-
-                    // Dừng ngay
-                    OutlinedButton(
-                        onClick = {
-                            val t = TaskPrefs.loadTask(ctx)
-                            AlarmSoundService.stop(ctx)
-                            AlarmScheduler.cancelAll(ctx, t.taskId)
-                            TaskPrefs.setEnabled(ctx, false)
-                            toast(ctx, "Đã dừng")
-                            currentTask = TaskPrefs.loadTask(ctx)
-                        },
-                        modifier = Modifier.fillMaxWidth(),
-                        enabled = masterPower
-                    ) {
-                        Text("DỪNG (TẮT NGAY)")
+                        // Sau này danh sách dài -> thêm items(...) ở đây.
                     }
                 }
             }
-
-            Spacer(Modifier.height(12.dp))
-
-            // Hồ sơ đang chạy + xoá tất cả
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Icon(Icons.Filled.Folder, contentDescription = "Folder")
-                Spacer(Modifier.width(8.dp))
-                Text("HỒ SƠ ĐANG CHẠY", fontWeight = FontWeight.ExtraBold)
-                Spacer(Modifier.weight(1f))
-                Button(
-                    onClick = { showDeleteAllConfirm = true },
-                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFE74C3C))
-                ) {
-                    Text("XOÁ TẤT CẢ", color = Color.White, fontWeight = FontWeight.Bold)
-                }
-            }
-
-            Divider(Modifier.padding(vertical = 8.dp))
-
-            // Danh sách (bản đơn giản - 1 nhiệm vụ)
-            Card(shape = RoundedCornerShape(16.dp)) {
-                val t = currentTask
-                Column(modifier = Modifier.padding(12.dp)) {
-                    Text("Tên: ${t.name}")
-                    Text("Bật: ${t.enabled}")
-                    Text("Giờ: ${t.month}/${t.day} ${t.hour}:${t.minute}")
-                    Text("Lặp: ${t.repeatValue} ${t.repeatUnit}")
-                    Text("Reo: ${t.ringCount} lần / ${t.ringEveryMinutes} phút")
-                    Text("Nhạc: ${if (t.musicUriStr.isBlank()) "Mặc định" else "Đã chọn"}")
-                }
-            }
-
-            Spacer(Modifier.height(8.dp))
         }
     }
 
