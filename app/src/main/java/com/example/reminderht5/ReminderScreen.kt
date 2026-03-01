@@ -11,7 +11,6 @@ import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -21,13 +20,13 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.imePadding
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
-import com.google.accompanist.pager.HorizontalPager
-import com.google.accompanist.pager.rememberPagerState
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Folder
 import androidx.compose.material.icons.filled.Menu
@@ -60,6 +59,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import com.google.accompanist.pager.HorizontalPager
+import com.google.accompanist.pager.rememberPagerState
 import java.util.Calendar
 
 @Composable
@@ -67,7 +68,7 @@ fun ReminderScreen() {
     ReminderHomeScreen()
 }
 
-@OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ReminderHomeScreen() {
     val ctx = LocalContext.current
@@ -93,6 +94,15 @@ fun ReminderHomeScreen() {
     // ====== Google Sign-In for Sync ======
     var showSyncDialog by rememberSaveable { mutableStateOf(false) }
     var signedUid by rememberSaveable { mutableStateOf(GoogleAuth.currentUid() ?: "") }
+
+    // ====== Delete all confirm (Trang 2) ======
+    var showDeleteAllConfirm by rememberSaveable { mutableStateOf(false) }
+
+    // ====== Load task for display ======
+    var currentTask by remember { mutableStateOf(TaskPrefs.loadTask(ctx)) }
+
+    // ====== Pager 2 trang ======
+    val pagerState = rememberPagerState(initialPage = 0)
 
     val googleSignInLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.StartActivityForResult()
@@ -165,18 +175,9 @@ fun ReminderHomeScreen() {
     val units = listOf("Ngày", "Tháng", "Năm", "Giờ", "Phút")
     var unitExpanded by rememberSaveable { mutableStateOf(false) }
 
-    // ====== Delete all confirm ======
-    var showDeleteAllConfirm by rememberSaveable { mutableStateOf(false) }
-
-    // ====== Load task for list display ======
-    var currentTask by remember { mutableStateOf(TaskPrefs.loadTask(ctx)) }
-
     LaunchedEffect(Unit) {
         NotificationHelper.ensureChannels(ctx)
     }
-
-    // Pager 2 trang
-    val pagerState = rememberPagerState(initialPage = 0)
 
     Scaffold(
         topBar = {
@@ -208,15 +209,22 @@ fun ReminderHomeScreen() {
 
             when (page) {
 
+                // =========================
+                // TRANG 1: chỉ tới "KÍCH HOẠT NHIỆM VỤ MỚI"
+                // =========================
                 0 -> {
-                    // ===== TRANG 1: chỉ giữ tới "KÍCH HOẠT NHIỆM VỤ MỚI" =====
+                    val scrollState = rememberScrollState()
+
                     Column(
                         modifier = Modifier
                             .fillMaxSize()
+                            .verticalScroll(scrollState)
                             .padding(12.dp)
+                            .navigationBarsPadding()
+                            .imePadding()
                     ) {
 
-                        // Đồng bộ (Google Login + Firestore)
+                        // Đồng bộ
                         Button(
                             modifier = Modifier.fillMaxWidth(),
                             onClick = {
@@ -388,7 +396,7 @@ fun ReminderHomeScreen() {
 
                                 Spacer(Modifier.height(12.dp))
 
-                                // Kích hoạt nhiệm vụ mới
+                                // Kích hoạt nhiệm vụ mới (NÚT CUỐI TRANG 1)
                                 Button(
                                     modifier = Modifier.fillMaxWidth(),
                                     onClick = {
@@ -430,57 +438,64 @@ fun ReminderHomeScreen() {
                             }
                         }
 
-                        // Trang 1 chỉ giữ tới đây.
-                        // (Không có: "DỪNG (TẮT NGAY)", không có: "HỒ SƠ ĐANG CHẠY")
+                        // chừa thêm đáy để chắc chắn không bị thanh hệ thống che
+                        Spacer(Modifier.height(24.dp))
                     }
                 }
 
+                // =========================
+                // TRANG 2: hồ sơ + xoá + danh sách cuộn dài
+                // =========================
                 1 -> {
-                    // ===== TRANG 2: hồ sơ + xoá + danh sách cuộn dài =====
-                    LazyColumn(
+                    val scrollState = rememberScrollState()
+
+                    Column(
                         modifier = Modifier
                             .fillMaxSize()
-                            .padding(12.dp),
-                        verticalArrangement = Arrangement.Top
+                            .verticalScroll(scrollState)
+                            .padding(12.dp)
+                            .navigationBarsPadding()
                     ) {
-
-                        item {
-                            Row(
-                                modifier = Modifier.fillMaxWidth(),
-                                verticalAlignment = Alignment.CenterVertically
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Icon(Icons.Filled.Folder, contentDescription = "Folder")
+                            Spacer(Modifier.width(8.dp))
+                            Text("HỒ SƠ ĐANG CHẠY", fontWeight = FontWeight.ExtraBold)
+                            Spacer(Modifier.weight(1f))
+                            Button(
+                                onClick = { showDeleteAllConfirm = true },
+                                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFE74C3C))
                             ) {
-                                Icon(Icons.Filled.Folder, contentDescription = "Folder")
-                                Spacer(Modifier.width(8.dp))
-                                Text("HỒ SƠ ĐANG CHẠY", fontWeight = FontWeight.ExtraBold)
-                                Spacer(Modifier.weight(1f))
-                                Button(
-                                    onClick = { showDeleteAllConfirm = true },
-                                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFE74C3C))
-                                ) {
-                                    Text("XOÁ TẤT CẢ", color = Color.White, fontWeight = FontWeight.Bold)
-                                }
+                                Text("XOÁ TẤT CẢ", color = Color.White, fontWeight = FontWeight.Bold)
                             }
-
-                            Divider(Modifier.padding(vertical = 8.dp))
                         }
 
-                        item {
-                            Card(shape = RoundedCornerShape(16.dp)) {
-                                val t = currentTask
-                                Column(modifier = Modifier.padding(12.dp)) {
-                                    Text("Tên: ${t.name}")
-                                    Text("Bật: ${t.enabled}")
-                                    Text("Giờ: ${t.month}/${t.day} ${t.hour}:${t.minute}")
-                                    Text("Lặp: ${t.repeatValue} ${t.repeatUnit}")
-                                    Text("Reo: ${t.ringCount} lần / ${t.ringEveryMinutes} phút")
-                                    Text("Nhạc: ${if (t.musicUriStr.isBlank()) "Mặc định" else "Đã chọn"}")
-                                }
-                            }
+                        Divider(Modifier.padding(vertical = 8.dp))
 
-                            Spacer(Modifier.height(8.dp))
+                        // Hồ sơ đang chạy (hiện tại app bạn đang lưu 1 nhiệm vụ)
+                        Card(shape = RoundedCornerShape(16.dp), modifier = Modifier.fillMaxWidth()) {
+                            val t = currentTask
+                            Column(modifier = Modifier.padding(12.dp)) {
+                                Text("Tên: ${t.name}")
+                                Text("Bật: ${t.enabled}")
+                                Text("Giờ: ${t.month}/${t.day} ${t.hour}:${t.minute}")
+                                Text("Lặp: ${t.repeatValue} ${t.repeatUnit}")
+                                Text("Reo: ${t.ringCount} lần / ${t.ringEveryMinutes} phút")
+                                Text("Nhạc: ${if (t.musicUriStr.isBlank()) "Mặc định" else "Đã chọn"}")
+                            }
                         }
 
-                        // Sau này danh sách dài -> thêm items(...) ở đây.
+                        Spacer(Modifier.height(12.dp))
+
+                        // Chỗ này sau này bạn thay bằng danh sách dài (cuộn vô hạn)
+                        Text(
+                            "Danh sách dài sẽ đặt ở đây (cuộn vô hạn).",
+                            color = Color.Gray
+                        )
+
+                        Spacer(Modifier.height(24.dp))
                     }
                 }
             }
@@ -541,7 +556,7 @@ fun ReminderHomeScreen() {
         )
     }
 
-    // Confirm delete all
+    // ====== Confirm delete all (Trang 2) ======
     if (showDeleteAllConfirm) {
         AlertDialog(
             onDismissRequest = { showDeleteAllConfirm = false },
